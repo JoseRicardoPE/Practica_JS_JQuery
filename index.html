@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="jquery-ui-1.13.1/jquery-ui.structure.min.css"
+    />
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.min.css" /> -->
+        
+    <!-- CDN para el slider JQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <!-- CDN momentjs (para las fechas) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-do.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- <script src="jquery-ui-1.13.1/jquery-ui.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/849e8c00db.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <title>Página con JQuery</title>
+  </head>
+  <body>
+    <main class="main__section" id="main__section">
+      <!-- Cabecero -->
+      <header class="header" id="header">
+        <figure class="header__logo">
+          <h1 class="logo" id="logo">Proyecto JS</h1>
+        </figure>
+        <nav class="header__navbar" id="header__navbar">
+          <a href="index.html" class="header__link" id="header__link">Inicio</a>
+          <a href="reloj.html" class="header__link" id="header__link">Reloj</a>
+          <a href="about.html" class="header__link" id="header__link">Sobre mí</a>
+          <a href="contact.html" class="header__link" id="header__link">Contacto</a>
+        </nav>
+      </header>
+
+      <!-- Slider -->
+      <section class="section__slider" id="section__slider">
+        <div class="slider__content" id="slider__content">
+          <figure class="slider__figure" id="slider__figure">
+            <img src="img/img1.jpg" alt="" class="slider__img" id="slider__img">
+          </figure>
+          <figure class="slider__figure" id="slider__figure">
+            <img src="img/img3.jpg" alt="" class="slider__img" id="slider__img">
+          </figure>
+          <figure class="slider__figure" id="slider__figure">
+            <img src="img/img4.jpg" alt="" class="slider__img" id="slider__img">
+          </figure>
+          <figure class="slider__figure" id="slider__figure">
+            <img src="img/img5.jpg" alt="" class="slider__img" id="slider__img">
+          </figure>
+          <figure class="slider__figure" id="slider__figure">
+            <img src="img/img6.jpg" alt="" class="slider__img" id="slider__img">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Contenido Principal -->
+      <div class="container">
+        <article class="article" id="article">
+          <!-- Aquí se agregarán los posts desde JSON JS -->
+        </article>
+  
+        <!-- Sidebar -->
+        <aside class="aside" id="aside">
+          <section class="aside__about" id="aside__about">
+            <h4 class="aside__subtitle">¿Quién soy?</h4>
+            <figure class="aside__figure">
+              <img src="img/img2.jpg" alt="" class="aside__img" />
+            </figure>
+            <p class="aside__paragraph">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
+              ex fuga inventore placeat commodi officia optio ab impedit hic.
+              Veniam nisi eligendi iure, accusamus vero magnam. Odio eveniet
+              voluptates debitis?
+            </p>
+          </section>
+
+          <section class="aside__form" id="aside__form">
+            <h4 class="form__subtitle" id="form__subtitle">Regístrate</h4>
+            <form action="" class="form" id="form">
+              <input type="text" name="nombre" class="nombre" id="form_name" placeholder="Nombre">
+              <input type="email" name="email" class="email" id="email" placeholder="Email">
+              <input type="password" name="pass" class="pass" id="pass" placeholder="Password">
+            </form>
+            <div class="form__btn" id="form__btn">
+              <button type="submit" class="btn btn--mod" id="btn">Entrar</button>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+    
+    <!-- Botón de ir arriba -->
+    <div id="btn-top" class="btn-top">
+      <span class="fas fa-angle-up"></span>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer" id="footer">
+      <span class="footer__content" id="footer__content"
+        >Práctica página web con HTML5, CSS3, Javascript, y JQuery.
+        &copy;</span
+      >
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

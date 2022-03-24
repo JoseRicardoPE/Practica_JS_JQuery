@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main__section{
+    width: 70%;
+    height: auto;
+    background-color: #fafafa;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgb(155, 153, 153), -2px -2px 5px rgb(160, 160, 160);
+    overflow: hidden;    
+}
+
+.header__logo{
+    width: 30%;
+    height: 70px;
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(175, 172, 172, 0.3),
+            -2px -2px 4px rgba(175, 172, 172, 0.3);
+}
+
+.logo{
+    width: 100%;
+    color: #f2f2f2;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+/* Menú navegación */
+.header__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #363636;
+}
+
+.header__link{
+    color: #f2f2f2;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.header__link:hover{
+    background-color: #f2f2f2;
+    color: #008080;
+    text-decoration: underline;
+}
+
+/* Slider */
+.section__slider{
+    width: 100%;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.slider__img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    vertical-align: top;
+} 
+
+.bx-wrapper, .bx-viewport, img{
+    width: 100%;
+    height: 350px;
+}
+
+/* article */
+.container{
+    display: flex;
+    gap: 1em;
+}
+
+.article{
+    width: 65%;
+}
+
+.section__posts{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1em;
+    padding: 20px;
+}
+
+.section__subtitle{
+    font-size: 1.5625rem;
+    color: #363636;
+    text-transform: capitalize;
+}
+
+.section__fecha{
+    font-size: 0.875rem;
+    color: #8c8c8c;
+}
+
+.section__paragraph{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    color: #363636;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    background-color: #008080;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: #f2f2f2;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover{
+    background-color: #fafafa;
+    color: #008080;
+    outline: 1px solid #008080;
+}
+
+/* sidebar */
+.aside{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.aside__subtitle{
+    color: #363636;
+    text-align: center;
+}
+
+.aside__figure{
+    width: 100%;
+    margin: 20px 0 10px;
+    box-shadow: 1px 1px 2px rgba(117, 117, 117, 0.3),
+            -1px -1px 2px rgba(117, 117, 117, 0.3);
+    border-radius: 3px;
+}
+
+.aside__img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.aside__paragraph{
+    color: #363636;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* aside form */
+.aside__form{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form__subtitle{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #363636;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.nombre, .email, .pass{
+    outline: none;
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #363636;
+    padding: 3px 8px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 3px rgba(211, 211, 211, 0.5);
+    border-radius: 3px;
+}
+
+.form__btn{
+    text-align: right;
+}
+
+/* Footer */
+.footer{
+    width: 70%;
+    margin: 30px auto;
+    background-color: rgba(54, 54, 54, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(50, 50, 50, 0.5);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(117, 117, 117, 0.3),
+            -1px -1px 2px rgba(117, 117, 117, 0.3);
+}
+
+/* Botón de ir arriba */
+.btn-top{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 128, 128, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 220px;
+    z-index: 1;
+    transform: translateY(200%);
+    transition: all 0.3s;
+}
+
+.btn-top.show{
+    transform: translateY(0);
+}
+
+.btn-top.scrollFinal{
+    transform: translateY(-250%);
+}
+
+.btn-top span{
+    width: 100%;
+    color: #f2f2f2;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    backdrop-filter: blur(20px);
+    transition: all 0.2s;
+}
+
+.btn-top:hover span{
+    background-color: #fafafa;
+    color: #008080;
+    outline: 1px solid #008080;
+    /* transform: translateY(-3px); */
+    border-radius: 50%;
+}
+
+
+/* Sección Sobre mí (Acordeón) */
+.section__acordeon{
+    width: 95%;
+    margin: 60px 0;
+    padding: 0 20px;
+}
+
+.ui-accordion-header{
+    background-color: #008080;
+    border: 1px solid #008080;
+    color: #f2f2f2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.acordeon__paragraph{
+    color: #363636;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.section__subtitle--mod{
+    margin-bottom: 10px;
+    border-bottom: 3px solid #363636;
+    display: inline-block;
+}
+
+/* Section estilos reloj */
+.section__reloj{
+    width: 40%;
+    height: 100px;
+    background-color: #008080;
+    margin: 60px auto;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    line-height: 100px;
+    border-radius: 50px;
+}
+
+/* Section estilos formulario de contacto */
+.section__form{
+    width: 85%;
+    height: auto;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #008080;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(139, 139, 139, 0.5),
+                -2px -2px 4px rgba(139 , 139 , 139, 0.5);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 10px 0;
+}
+
+.content__data{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.subtitle__form--mod{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.form label{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.form input{
+    outline: none;
+    padding: 5px 8px;
+    font-size: 0.875rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color:#363636;
+    letter-spacing: 0.8px;
+}
